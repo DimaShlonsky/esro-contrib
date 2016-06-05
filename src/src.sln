@@ -3,11 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "src", "src.shproj", "{758FAF92-8726-421B-8F81-1B5A84C57AEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src", "src.csproj", "{CA2CC2D0-8842-413C-A2F4-0FEAEE4505AF}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		src.projitems*{758faf92-8726-421b-8f81-1b5a84c57aee}*SharedItemsImports = 13
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA2CC2D0-8842-413C-A2F4-0FEAEE4505AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2CC2D0-8842-413C-A2F4-0FEAEE4505AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2CC2D0-8842-413C-A2F4-0FEAEE4505AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2CC2D0-8842-413C-A2F4-0FEAEE4505AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
