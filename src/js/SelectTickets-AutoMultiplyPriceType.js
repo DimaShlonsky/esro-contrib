@@ -1,5 +1,5 @@
 ﻿//Modifies the behavior of SelectTickets control in GA mode for a certain price type, causing it to add multiple tickets for each ticket added
-define(['jQuery'], function ($) {
+define(['jquery'], function ($) {
     return (function autoMultiplyPriceType(priceTypeId, multiplier) {
         $(".selectTickets.mode-GeneralAdmission").bind("init.esro.selectTickets", function (event) {
             var inputCount = $(".row:has(.priceTypes[value='" + priceTypeId + "']) .count", this);
