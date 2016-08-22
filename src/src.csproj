@@ -85,6 +85,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="sp\TicketingProductProperty.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
