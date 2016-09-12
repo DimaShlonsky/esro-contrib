@@ -1,5 +1,5 @@
 ﻿//Copy-paste this into custom/style.js; Do not use require()
-$("body.screen-ClientRequiredFallback_aspx").one("dialogcreate", ".loginOrRegisterDlg", function (e) {
+﻿$("body.screen-ClientRequiredFallback_aspx").one("dialogcreate", ".loginOrRegisterDlg", function (e) {
     e.preventDefault();
     $(document).one("ajaxSend", function (e, xhr, options) {
         var url = "LoginOrRegisterDlg.aspx";
