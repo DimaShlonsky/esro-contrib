@@ -1,4 +1,6 @@
-﻿define(['https://rawgit.com/chancejs/chancejs/master/dist/chance.min.js'], function (Chance) {
+﻿//bookmark URL:
+//javascript: require(['https://rawgit.com/DimaShlonsky/esro-contrib/master/src/helpers/FillCreateAccountForm.js'], function (f) { f() });
+define(['https://rawgit.com/chancejs/chancejs/master/dist/chance.min.js'], function (Chance) {
     return function(){
         var chance = new Chance(),
             fields = {"FirstName":chance.first(),
