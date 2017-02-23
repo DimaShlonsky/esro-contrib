@@ -71,6 +71,7 @@
     <Content Include="js\Crm-MakeFieldUppercase.js" />
     <Content Include="js\DataProtectionLogic.js" />
     <Content Include="js\ItemExtraDataDlg-SelectAllItems.js" />
+    <Content Include="js\SeatingPlan-ConfirmationOnClick.js" />
     <Content Include="js\SelectTickets-AutoMultiplyPriceType.js" />
     <Content Include="js\SelectTickets-CustomPriceTypeLimitError.js" />
     <Content Include="js\UserDetailsForm-ConfirmUnload.js" />
