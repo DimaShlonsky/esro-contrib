@@ -13,13 +13,15 @@
         require(['custom/SeatingPlan-ConfigurationOnClick']);
 */
 define(['module', 'js/SeatingPlan'], function (module, SP) {
-    var cfg = module.config()
+    var cfg = module.config(),
+	    seatingPlan;
     SP.getInstancePromise(document)
-        .done(function (spInstance) {
+        .then(function (spInstance) {
+            seatingPlan = spInstance;
             return spInstance.getLoadedPromise();
         })
-        .done(function (spInstance) {
-            $("img.seat", spInstance.seatsContainer).on("seatClicked.esro", function (e, seat) {
+        .done(function () {
+            $("img.seat", seatingPlan.seatsContainer).on("seatClicked.esro", function (e, seat) {
                 var me = this, args = $.makeArray(arguments);
                 if (e.skipSeatInfoCheck || !seat.info || $(me).data("alertAccepted") || seat.status != 10) {
                     return;
