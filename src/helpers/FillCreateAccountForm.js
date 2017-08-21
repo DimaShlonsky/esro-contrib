@@ -28,8 +28,10 @@ define(['https://rawgit.com/chancejs/chancejs/master/dist/chance.min.js'], funct
                 "Website":chance.url()
             };
         fields.AccountName = fields.Website;
+        fields.Initial = fields.NamePrefix;
         fields.Initials = fields.FirstName.substr(0, 1).toUpperCase() + fields.LastName.substr(0, 1).toUpperCase();
         fields.PasswordVerify = fields.Password;
+        fields.EmailVerify = fields.Email;
         $.each(fields, function (k, v) {
             var input = $("[name]").filter(function (i, e) { return $(e).attr("name") == k; });
             if (input.is("select")) {
